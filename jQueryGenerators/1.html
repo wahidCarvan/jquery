@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jquery generators 1</title>
+  <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- make an empty div -->
+<div id='emptyDiv'></div>
+<!-- adding javascript to our page -->
+<script type="text/javascript">
+// Thanks to the handy $ selector from jQuery and its library of methods With jQuery we can easily inject full HTML.
+// adds hello world to our empty div that we made up top id use # classes use.
+$("#emptyDiv").html("<h1> Hello friends!</h1>");
+//we can easily add a new line
+$('#emptyDiv').append("A pleasure to meet you!");
+  </script>
+</body>
+</html>

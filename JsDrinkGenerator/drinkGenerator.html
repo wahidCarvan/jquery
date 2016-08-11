@@ -25,18 +25,23 @@
         'Ice Latte: $6',
         'Ice Tea: $4'
         ];
-   
-    // This line of Javascript "grabs" the div with the matching id (#drinkOptions) the empty div we made;
-  var drinkDiv = document.getElementById("drinkOptions");
-  // For Loop then loops through our total drink list...
-  for (var i = 0; i < drinkList.length; i++){
-    // It then creates a new div for each drink
-    var newDrinkDiv = document.createElement("div");
+     // Create code that "grabs" the div with the matching id (#drinkOptions);
+     var newDiv = document.querySelector('drinkOptions')
+    // ...
+    // ...
+  // Create a for loop that creates HTML content of all the drinks using Javascript.
+  for(var i =0; i <drinkList.length; i ++){
+    // it makes a new div for each drink
+    var newDrinkDiv = document.createElement('div');
     // It then makes the contents of this new div the drink and price
     newDrinkDiv.innerHTML = drinkList[i];
     // It then adds this new div to the drinkList div.
     drinkDiv.appendChild(newDrinkDiv)
   }
+  // HINT: You will need to use each of the following methods: createElement, innerHTML, appendChild
+  // ...
+  // ...
+
 </script>
   
 </body>

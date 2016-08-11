@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Generator</title>
+</head>
+<body>
+<h1>Food Choices</h1>
+<hr>
+<!-- lets make an empty div to store our foodOptions -->
+<div id='foodOptions'></div>
+<!-- adding our javascript -->
+<script type="text/javascript">
+  var FoodList=[
+  'pizza: $5',
+  'turkey: $7',
+  'Gyro: $6',
+  'steak: $20',
+  'cheesecake: $11'
+  ];
+  // lets make code to grab the div foodOptions
+  var newDiv= document.querySelector('foodOptions')
+  // for loop to loop through our choices
+  for(var i =0; i <FoodList.length; i ++){
+// lets make a new div for each food option
+var newFoodDiv = document.createElement('div');
+// we then take the contents from foodList and dump it in to our new div
+newFoodDiv.innerHTML = FoodList[i];
+newFoodDiv.appendChild(newFoodDiv)
+  }
+</script>
+</body>
+</html>

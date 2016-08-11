@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trigger Clicked</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<!-- added a button to be clicked -->
+<button>Click ME</button>
+<!-- adding javascript -->
+<script type="text/javascript">
+// This document.ready isn't necessary in this example... but is needed in cases where the HTML is complex.
+// This code makes sure that the javascript doesn't get run until the HTML is finished loading 
+// It's good practice to start using it now
+$(document).ready(function(){
+    $("button").on('click',function(){
+      //trigger an alert after button has been clicked
+      alert("yea you clicked me!");
+    })
+})
+
+</script>
+  
+</body>
+</html>
