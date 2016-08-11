@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset="UTF-8">
+  <title>basic javascript dump</title>
+</head>
+<body>
+<!-- made an empty div -->
+<div id='emptyDiv'></div>
+<!-- lets add some css -->
+<style>
+  .fancy{
+    font-size: 100px;
+    color: green;
+  }
+</style>
+<script type="text/javascript">
+  // we then grab the empty div using javascript and call it target div
+  var targetDiv =document.getElementById('emptyDiv')
+  // We then used the Javascript method .innerHTML to change the content to "Hello friends!"
+  targetDiv.innerHTML='Hello friends!'
+  // now we will make a new Div
+  var newDiv =document.createElement('div');
+  newDiv.innerHTML ="A pleasure to meet you!"
+   // Now let's combine both divs so we can see both
+  targetDiv.appendChild(newDiv);
+  // Let's add a style to this div...
+  newDiv.setAttribute('class', 'fancy');
+</script>
+
+</body>
+</html>

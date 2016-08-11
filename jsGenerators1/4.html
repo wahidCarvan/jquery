@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>appending to divs</title>
+</head>
+<body>
+<!-- making an empty div -->
+<div id='emptyDiv'></div>
+
+<script type="text/javascript">
+// now we grab the empty div and called it targetDiv
+  var targetDiv = document.getElementById('emptyDiv');
+  // now we will change its content with the javascript method .innerHTML
+  targetDiv.innerHTML = 'hello friends!'
+  // we will make a new div
+  var newDiv = document.createElement('div');
+  newDiv.innerHTML ="A pleasure to meet you, Bob!"
+  // now we will combine both divs so both are visisble on the page
+  targetDiv.appendChild(newDiv);
+</script>
+</body>
+</html>
